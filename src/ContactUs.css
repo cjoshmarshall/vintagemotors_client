@@ -1,0 +1,111 @@
+.contactUs {
+  position: relative;
+  margin: 50px auto 0 auto;
+  min-height: 60%;
+  width: 65%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  padding: 0px 15px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.contactUs_titleContainer {
+  padding: 10px;
+  text-align: center;
+}
+
+.contactUs_title {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(233, 232, 232);
+}
+
+.contactUs_subcontainer1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 60px;
+  margin-right: 150px;
+  margin-left: 60px;
+}
+
+.contactUs_subcontainer2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 60px;
+  margin-right: 150px;
+  margin-left: 60px;
+}
+
+.contactUs_subcontainer3 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 60px;
+  margin-right: 50px;
+  margin-left: 60px;
+}
+
+.contactUs_locationOnIcon.contactUs_phoneIcon.contactUs_emailIcon{
+    position: fixed;
+}
+
+.contactUs_container2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.contactUs_subcontainer4 {
+  display: flex;
+  justify-content: space-between;
+}
+.contactUs_subcontainer4 > div > input {
+  border: transparent;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-size: 17px;
+  padding: 8px 0;
+}
+.contactUs_subcontainer4> div > input:-webkit-autofill{
+  box-shadow: 0 0 0 30px white inset !important;
+}
+.contactUs_nameInput,
+.contactUs_emailInput,
+.contactUs_phoneInput {
+  width: 30%;
+}
+
+.contactUs_subcontainer5 {
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.contactUs_subcontainer5> div > input:-webkit-autofill{
+  box-shadow: 0 0 0 30px white inset !important;
+}
+.contactUs_commentInput {
+  display: flex;
+  flex-direction: column;
+}
+.contactUs_commentInput > input {
+  border: transparent;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-size: 17px;
+  padding: 8px 0;
+}
+
+.contactUs_buttoncontainer {
+  display: flex;
+  padding: 15px 0;
+  text-align: center;
+}
+.contactUs_button {
+  padding: 12px;
+  font-weight: 5px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgb(218, 199, 34);
+  cursor: pointer;
+  font-size: 15px;
+  width: 800px;
+}
+

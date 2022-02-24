@@ -1,0 +1,44 @@
+.pickupForm{
+    object-fit: contain;
+    margin-top:-400px;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type='date']{
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto Mono',monospace;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type='time']{
+    background-color: white;
+    padding: 6.5px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto Mono',monospace;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border:  1px solid black;
+    border-radius: 5px;
+    outline: none;
+}

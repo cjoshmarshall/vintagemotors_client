@@ -1,0 +1,76 @@
+.loginForm_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* width: fit-content; */
+}
+.loginForm_phone{
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 0 auto;
+}
+.loginForm_phoneLabel{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.loginForm_phoneInput{
+  width: 250px;  font-size: 15px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+}
+
+.loginForm_password{
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+}
+.loginForm_passwordLabel{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.loginForm_passwordInput{
+  width: 215px;
+  font-size: 15px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+}
+.loginForm_passwordIcon {
+  padding: 0 5px;
+  border: transparent;
+  border-radius: 2px;
+  color: rgb(158, 158, 158);
+}
+.loginForm_passwordIcon:hover {
+  cursor: pointer;
+}
+
+.loginForm_passwordcontainer{
+  display: flex;
+}
+
+.loginForm_container>div>input:-webkit-autofill,
+input:-webkit-autofill:active{
+  box-shadow: 0 0 0 30px rgb(241, 241, 241) inset !important;
+}
+
+.loginForm_buttoncontainer{
+  padding-bottom: 10px;
+}
+
+.loginForm_button {
+  padding: 12px;
+  font-weight: 5px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgb(218, 199, 34);
+  cursor: pointer;
+  font-size: 15px;
+  width: 318px;
+}
+
+
+

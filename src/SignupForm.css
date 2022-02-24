@@ -1,0 +1,118 @@
+.signupForm_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* width: 275px; */
+}
+
+.signupForm_name {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+}
+.signupForm_nameLabel {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.signupForm_nameInput {
+  width: 250px;
+  font-size: 15px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+}
+
+.signupForm_phone {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+}
+.signupForm_phoneLabel {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.signupForm_phoneInput {
+  width: 250px;
+  font-size: 15px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+}
+
+
+.signupForm_password1 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+}
+.signupForm_passwordLabel1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.signupForm_passwordInput1 {
+  width: 250px;
+  font-size: 15px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+}
+
+.signupForm_passwordcontainer{
+  display: flex;
+}
+.signupForm_password2 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+}
+.signupForm_passwordLabel2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.signupForm_passwordInput2 {
+  width: 215px;
+  font-size: 15px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 2px;
+  background-color: rgb(241, 241, 241);
+}
+.signupForm_passwordIcon {
+  padding: 0 5px;
+  border: transparent;
+  border-radius: 2px;
+  color: rgb(158, 158, 158);
+}
+.signupForm_passwordIcon:hover {
+  cursor: pointer;
+}
+
+.signupForm_passwordcontainer2{
+  display: flex;
+}
+
+.signupForm_container > div > input:-webkit-autofill,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px rgb(241, 241, 241) inset !important;
+}
+
+.signupForm_buttoncontainer {
+  margin-top: 35px;
+  padding: 10px 0;
+}
+
+.signupForm_button {
+  padding: 12px;
+  font-weight: 5px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgb(218, 199, 34);
+  cursor: pointer;
+  font-size: 15px;
+  width: 318px;
+}
+
+

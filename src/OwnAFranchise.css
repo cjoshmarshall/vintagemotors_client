@@ -1,0 +1,60 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+.ownAFranchise_image {
+  height: 500px;
+  background-image: url(./ownAFranchise_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ownAFranchise_container1 {
+  width: 49%;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 130px 50px;
+}
+
+.ownAFranchise_container2 {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  font-size: 18px;
+  padding-top: 60px;
+}
+
+.ownAFranchise_subcontainer1{
+  margin-top: 150px;
+}
+.ownAFranchise_subcontainer2{
+  margin: 200px auto;
+}
+.ownAFranchise_subcontainer3{
+  margin-top: 200px;
+}
+
+.ownAFranchise_content{
+  width: 500px;
+}
+.ownAFranchise_subtitle{
+  padding: 15px 0;
+}
+.ownAFranchise_body{
+  color: rgb(94, 94, 94);
+  line-height: 30px;
+}
+
+.ownAFranchise_buttoncontainer{
+  padding-top: 100px;
+}
+.ownAFranchise_button{
+  padding: 15px;
+  font-weight: 5px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgb(218, 199, 34);
+  cursor: pointer;
+  font-size: 25px;
+  width: 400px;
+}
+

@@ -1,0 +1,13 @@
+/* body {
+  background-color: #dadada;
+} */
+
+.notFound_container {
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+}
+
+.notFound_image {
+  margin: auto;
+}
