@@ -41,12 +41,13 @@
   /* justify-content: space-evenly; */
 }
 .tariff_innerbody > div {
-  padding: 0 0 0 12px ;
-  width: 75%;
+  padding: 0 0 0 15px ;
+  width: 80%;
+  font-size: medium;
 }
-/* .tariff_innerbody > span{
-  width: 13%;
-} */
+.tariff_innerbody > span{
+  font-size: medium;
+}
 .tariff_innercontent1 {
   padding: 0 20px;
 }
@@ -63,6 +64,7 @@
   font-weight: 5px;
   border: transparent;
   border-radius: 0 0 5px 5px;
+  color: black;
   background-color: rgb(218, 199, 34);
   cursor: pointer;
   font-size: 15px;

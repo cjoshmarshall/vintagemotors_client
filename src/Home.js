@@ -12,8 +12,8 @@ function Home() {
         <div className='home'>
             <div className='home_image1'>               
                 <div className='home_container1'>
-                    <h1>Rent.</h1>
-                    <h1>Ride.</h1>
+                    <h1 className='home_title'>Rent.</h1>
+                    <h1 className='home_title'>Ride.</h1>
                     <div className='home_buttoncontainer'>
                         <button className='home_button'>Book a ride now</button>
                     </div>

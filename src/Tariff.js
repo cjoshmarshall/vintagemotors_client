@@ -25,9 +25,7 @@ function Tariff() {
             return(     
                 <div className='tariff_subcontainer' key={bike.id}>
                     <div className='tariff_innercontainer1'>
-                        <h4 className='tariff_subtitle'>
-                            <div>{bike.name} {bike.model}</div>
-                        </h4>
+                        <h3 className='tariff_subtitle'>{bike.name} {bike.model}</h3>
                         <img className='tariff_image' name='honda_activa_3G' src={bike.image} alt=' '/>
                     </div>
                     <div className='tariff_innercontainer2'>

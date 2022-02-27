@@ -26,8 +26,12 @@ function Header() {
                               <div className='header_materialicon'><ExpandMoreIcon /></div>
                          </button>
                          <div className='dropdown_content'>
-                         <a href='/contact-us'>Contact Us</a>
-                         <a href='/terms-and-condition'>Terms & Cond.</a>
+                         <a href='/contact-us'>
+                              <div className='dropdown_contentbtn'>Contact Us</div>
+                         </a>
+                         <a href='/terms-and-condition'>
+                              <div className='dropdown_contentbtn'>Terms & Cond.</div>
+                         </a>
                          </div>
                     </div>
                </div>

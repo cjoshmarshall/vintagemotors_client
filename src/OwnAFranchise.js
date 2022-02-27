@@ -9,7 +9,7 @@ function OwnAFranchise() {
             <div className='ownAFranchise_image'>
             <div className='ownAFranchise_container1'>
                 <div className='ownAFranchise_content'>
-                    <h1>Partner with Vintage Motors Rentals</h1>
+                    <h1 className='ownAFranchise_title'>Partner with Vintage Motors Rentals</h1>
                 </div>
             </div>
             </div>

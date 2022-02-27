@@ -257,11 +257,11 @@ function Summary({match}) {
                 <h2 className='summary_title1'>SUMMARY</h2>
                 <div className='summary_subcontainer1'>
                     <div className='summary_innercontainer'>
-                        <h4 className='summary_innertitle'>{bike.name} {bike.model}</h4>
+                        <h3 className='summary_innertitle'>{bike.name} {bike.model}</h3>
                         <div className='summary_imagecontainer'>
                             <img className='summary_image' name='summary_image' src={bike.image} alt=''/>
                         </div>
-                        <div className='summary_content'>
+                        <div>
                             <RangePicker use12Hours
                                 disabledDate={disabledDate}
                                 disabledTime={disabledRangeTime}
@@ -270,19 +270,16 @@ function Summary({match}) {
                                     }}
                                 format={'DD-MMM-YY HH:mm A'} minuteStep={10} onChange={selectedTimeSlot} />
       
-                            <div>Address</div>
-                            <div>
-                                <div>
+                            <div  className='summary_content'>
+                                <div className='summary_cost1'>
                                     <div>Booking Time (0-24 hrs)</div>
                                     <span>₹<b>{bike.bookingTime}</b>/hr</span>
                                 </div>
-                            </div><br/>
-                            <div>
-                                <div>
+                                <div className='summary_cost1'>
                                     <div>Km limit</div>
                                     <span><b>{bike.kmLimit}</b>/hr</span>
                                 </div>
-                                <div>
+                                <div className='summary_cost1'>
                                     <div>Excess km charges</div>
                                     <span>₹<b>{bike.excessKmCharges}</b>/hr</span>
                                 </div>
@@ -295,20 +292,20 @@ function Summary({match}) {
                 <div className='summary_subcontainer2'>
                     <h2 className='summary_title2'>CHECKOUT</h2>
                     <div className='summary_innercontainer2'>
-                        <div>
+                        <div className='summary_cost2'>
                             <div>Booking fee</div>
                             <span>₹<b>{bookingFee}</b></span>
                         </div>
-                        <div>
+                        <div className='summary_cost2'>
                             <div>CGST(7%)</div>
                             <span>₹<b>{cgst}</b></span>
                         </div>
-                        <div>
+                        <div className='summary_cost2'>
                             <div>SGST(7%)</div>
                             <span>₹<b>{sgst}</b></span>
                         </div>
                     </div>
-                    <div>
+                    <div className='summary_cost2'>
                         <div><b>Total Payment Amount</b> </div>
                         <span><b>₹{totalAmount}</b></span>                       
                     </div>
