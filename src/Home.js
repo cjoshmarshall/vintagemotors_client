@@ -15,7 +15,9 @@ function Home() {
                     <h1 className='home_title'>Rent.</h1>
                     <h1 className='home_title'>Ride.</h1>
                     <div className='home_buttoncontainer'>
-                        <button className='home_button'>Book a ride now</button>
+                        <a href='/tariff'>
+                            <button className='home_button'>Book a ride now</button>
+                        </a>
                     </div>
                 </div>
             </div>    
