@@ -1,8 +1,6 @@
-@import url('https://cdn.syncfusion.com/ej2/material.css');
-
 .ownAFranchise_image {
   height: 500px;
-  background-image: url(./ownAFranchise_image.jpg);
+  background-image: url(../assets/ownAFranchise_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

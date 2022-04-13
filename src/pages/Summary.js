@@ -161,8 +161,8 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { DatePicker } from 'antd';
 import moment from 'moment'
-import { getAllBikes } from './actionTariff'
-import { bookBike } from './actionBooking'
+import { getAllBikes } from '../actions/actionTariff'
+import { bookBike } from '../actions/actionBooking'
 import StripeCheckout from 'react-stripe-checkout';
 import 'antd/dist/antd.css';
 import './Summary.css'
@@ -250,6 +250,10 @@ function Summary({match}) {
     }
 
     
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
 
     return (
         <div className='summary'>
@@ -311,6 +315,7 @@ function Summary({match}) {
                     </div>
 
                     <StripeCheckout
+                        name='Vintage Motor Rentals'
                         shippingAddress
                         token={onToken}
                         amount={totalAmount*100}

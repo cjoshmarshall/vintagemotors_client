@@ -1,8 +1,13 @@
-import React from 'react'
-import Masthead from './Masthead'
+import React, { useEffect } from 'react'
+import Masthead from '../components/Masthead'
 import './TermsCond.css'
 
 function TermsCond() {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div>
         <div className='termscond'>

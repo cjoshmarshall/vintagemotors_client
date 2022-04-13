@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import Masthead from './Masthead';
-import {getAllBikes} from './actionTariff'
+import Masthead from '../components/Masthead';
+import {getAllBikes} from '../actions/actionTariff'
 import './Tariff.css'
 import { Link } from 'react-router-dom';
 
@@ -12,6 +12,11 @@ function Tariff() {
     useEffect(()=>{
         dispatch(getAllBikes())
     },[])
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
 
     return (
         <>

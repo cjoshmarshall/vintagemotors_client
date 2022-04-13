@@ -1,8 +1,13 @@
-import React from 'react'
-import Masthead from './Masthead'
+import React, { useEffect } from 'react'
+import Masthead from '../components/Masthead'
 import './OwnAFranchise.css'
 
 function OwnAFranchise() {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <>
         <div className='ownAFranchise'>

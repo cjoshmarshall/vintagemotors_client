@@ -1,6 +1,6 @@
 .aboutUs_image {
   height: 640px;
-  background-image: url(./aboutUs_image.jpg);
+  background-image: url(../assets/aboutUs_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

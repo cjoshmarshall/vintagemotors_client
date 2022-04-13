@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
-import { userSignup} from "./actionUser";
+import { userSignup} from "../actions/actionUser";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import './SignupForm.css'
+import { useHistory } from "react-router-dom";
 
 function SignupForm() {
     const [name, setName]=useState('');
@@ -13,11 +14,14 @@ function SignupForm() {
 
     
     const dispatch=useDispatch()
+    const history=useHistory()
+
     function signup(e){
         e.preventDefault()
         dispatch(userSignup({
             name,phone,password,password2
         }))
+        history.push("/");
     }
 
     

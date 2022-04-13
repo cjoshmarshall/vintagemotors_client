@@ -1,20 +1,28 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
-import Header from './Header'
-import Home from './Home';
-import AboutUs from './AboutUs';
-import Tariff from './Tariff';
-import OwnAFranchise from './OwnAFranchise';
-import ContactUs from './ContactUs';
-import NotFound from './NotFound';
-import LoginPage from './LoginPage';
-import TermsCond from './TermsCond';
-import Summary from './Summary';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import Header from './components/Header'
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import Tariff from './pages/Tariff';
+import OwnAFranchise from './pages/OwnAFranchise';
+import ContactUs from './pages/ContactUs';
+import NotFound from './pages/NotFound';
+import LoginPage from './pages/LoginPage';
+import TermsCond from './pages/TermsCond';
+import Summary from './pages/Summary';
 
 
 
 function App() {
+    
+const ProtectedRoute=(props)=>{
+  if(localStorage.getItem("user")){
+    return <Route {...props} />
+  }else{
+    return <Redirect to="/login" />
+  }
+}
+
   return (
     <BrowserRouter>
       <Header />
@@ -26,7 +34,7 @@ function App() {
         <Route path='/contact-us' component={ContactUs} />
         <Route path='/login' component={LoginPage} />
         <Route path='/terms-and-condition' component={TermsCond} />
-        <Route path='/summary/:bikeid' component={Summary} />
+        <ProtectedRoute path='/summary/:bikeid' component={Summary} />
         
 
         <Route path='*' component={NotFound} />

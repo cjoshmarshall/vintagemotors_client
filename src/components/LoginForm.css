@@ -19,6 +19,7 @@
   border: transparent;
   border-radius: 2px;
   background-color: rgb(241, 241, 241);
+  outline: none;
 }
 
 .loginForm_password{
@@ -37,6 +38,7 @@
   border: transparent;
   border-radius: 2px;
   background-color: rgb(241, 241, 241);
+  outline: none;
 }
 .loginForm_passwordIcon {
   padding: 0 5px;

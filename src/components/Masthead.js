@@ -1,5 +1,5 @@
 import React from 'react'
-import masthead from './masthead.png'
+import masthead from '../assets/masthead.png'
 import './Masthead.css'
 
 function Masthead() {

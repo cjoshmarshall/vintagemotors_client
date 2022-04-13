@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
-import home_icon1 from './home_icon1.png'
-import home_icon2 from './home_icon2.png'
-import home_image2 from './home_image2.jpg'
-import Masthead from './Masthead';
+import home_icon1 from '../assets/home_icon1.png'
+import home_icon2 from '../assets/home_icon2.png'
+import home_image2 from '../assets/home_image2.jpg'
+import Masthead from '../components/Masthead';
+import { Link } from 'react-router-dom'
 
-import PickupForm from './PickupForm'
 
 function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div className='home'>
             <div className='home_image1'>               
@@ -15,9 +20,9 @@ function Home() {
                     <h1 className='home_title'>Rent.</h1>
                     <h1 className='home_title'>Ride.</h1>
                     <div className='home_buttoncontainer'>
-                        <a href='/tariff'>
+                        <Link to='/tariff'>
                             <button className='home_button'>Book a ride now</button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>    

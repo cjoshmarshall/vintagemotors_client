@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import Masthead from './Masthead';
+import React, { useEffect, useState } from 'react'
+import Masthead from '../components/Masthead';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import './ContactUs.css';
 import { useDispatch } from 'react-redux';
-import { comments } from './actionComment';
+import { comments } from '../actions/actionComment';
 
 function ContactUs() {
     const [name, setName]=useState('');
@@ -21,6 +21,10 @@ function ContactUs() {
             name,email,phone,comment
         }))
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <>
