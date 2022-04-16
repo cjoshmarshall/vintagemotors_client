@@ -3,17 +3,36 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './Header.css'
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
+import { Menu, Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+
 
 function Header() {
-
-     const data=localStorage.getItem("user")
-     console.log(data)
-     // console.log(user)
+     
+     const user=JSON.parse(localStorage.getItem("user"))
+     console.log(user)
 
      const logout=()=>{
           localStorage.clear()
           window.location.href='/';
      }
+     
+     const menu = (
+       <Menu>
+         <Menu.Item className='header_menu' key="0">
+               <Link to="">Account</Link>
+         </Menu.Item>
+         <Menu.Divider />
+         <Menu.Item className='header_menu' key="1">
+               <Link to="/orders">Orders</Link>
+         </Menu.Item>
+         <Menu.Divider />
+         <Menu.Item className='header_menu' key="3" onClick={logout}>
+              Logout
+          </Menu.Item>
+       </Menu>
+     );
+
 
     return (
           <div className='header'>
@@ -47,12 +66,20 @@ function Header() {
                     </div>
                </div>
 
-               {data?<div>{data}</div>:<Link to='/login'>
+               {
+               user?
+               <Dropdown overlay={menu} trigger={['click']}>
+                    <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+                    <button className='header_login'>{user.name}</ button>
+                    </a>
+               </Dropdown>
+               :<Link to='/login'>
                     <button className='header_login'>Login</button>
                </Link>}
 
                
-               <button className='header_login' onClick={logout}>Logout</button>
+               
+               {/* <button className='header_login' onClick={logout}>Logout</button> */}
         </div>    
     )
 }

@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound';
 import LoginPage from './pages/LoginPage';
 import TermsCond from './pages/TermsCond';
 import Summary from './pages/Summary';
+import Orders from './pages/Orders';
 
 
 
@@ -35,6 +36,7 @@ const ProtectedRoute=(props)=>{
         <Route path='/login' component={LoginPage} />
         <Route path='/terms-and-condition' component={TermsCond} />
         <ProtectedRoute path='/summary/:bikeid' component={Summary} />
+        <ProtectedRoute path='/orders' component={Orders} />
         
 
         <Route path='*' component={NotFound} />

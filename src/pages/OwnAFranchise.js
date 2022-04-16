@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Masthead from '../components/Masthead'
 import './OwnAFranchise.css'
 
@@ -47,11 +48,11 @@ function OwnAFranchise() {
                             Our team has built highly sophisticated operational tools that help in easing out our end to end operations. Our analytical tools determine the demand and supply through which we regulate our inventory time and again.
                         </div>                        
                         <div className='ownAFranchise_buttoncontainer'>
-                            <a href='/contact-us'>
+                            <Link to='/contact-us'>
                                 <button className='ownAFranchise_button'>
                                     Apply for Franchise
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -80,7 +80,7 @@ function ContactUs() {
                         <div className='contactUs_subcontainer5'>
                             <div className='contactUs_commentInput'>
                                 <label>Comment</label>
-                                <input type='text' name='comment' value={comment} onChange={e=>setComment(e.target.value)}/>
+                                <textarea type='text' name='comment' value={comment} onChange={e=>setComment(e.target.value)}/>
                             </div>
                         </div>
                         <div className='contactUs_buttoncontainer'>

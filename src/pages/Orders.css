@@ -1,0 +1,67 @@
+.orders_title{
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+
+.orders_buttonContainer{
+    text-align: center;
+}
+.orders_button{
+    text-align: center;
+    padding: 12px;
+    font-weight: 5px;
+    border: transparent;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(218, 199, 34);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.orders_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.orders_subcontainer{
+    border: 1px solid rgb(224, 224, 224);
+    margin: 20px 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.orders_image{
+    margin: 30px;
+}
+
+.orders_innercontainer{
+    margin: 30px 0;
+}
+
+.orders_name{
+    margin-bottom: 15px;
+}
+
+.orders_info1{
+    display: flex;
+    font-size: 15px;
+}
+.orders_info1>span:first-child{
+    width: 150px;
+}
+.orders_info1>span{
+    width: 20px;
+    font-weight: 500;
+}
+
+.orders_info2{
+    display: flex;
+    font-size: 15px;
+}
+.orders_info2>span:first-child{
+    width: 90px;
+}
+.orders_info2>span{
+    width: 15px;
+    font-weight: 500;
+}

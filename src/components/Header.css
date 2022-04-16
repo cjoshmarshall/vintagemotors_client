@@ -155,3 +155,13 @@
     display: none;
   }
 }
+
+.header_menu{
+  width: 70px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.header_menu:hover{
+  background-color: rgb(218, 199, 34);
+}

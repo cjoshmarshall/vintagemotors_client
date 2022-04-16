@@ -181,8 +181,10 @@ function Summary({match}) {
     const[sgst,setSgst]=useState(0)
     const[totalAmount,setTotalAmount]=useState(0)
 
-    const item= localStorage.getItem('bikeid')
-    console.log(item)
+    // const item= JSON.parse(sessionStorage.setItem())
+    // console.log(item)
+
+    const STRIPE_KEY="pk_test_51KmWGfSGIFDQV8rwn9CfCmjRs9VcLPlecOdo5G7bSkqZy0SLTT2TKtv81giujmHxovpzxEF9GgRz048Zu0LEjRK700JCcnQjFV"
 
     const { RangePicker } = DatePicker;
 
@@ -319,8 +321,9 @@ function Summary({match}) {
                         shippingAddress
                         token={onToken}
                         amount={totalAmount*100}
+                        currency="INR"
                         allowRememberMe
-                        stripeKey="pk_test_51KOGnISEywSRKpM0XLY6ne4C17kXhjbvyUTCchVbmdNoJeCq6D7gwhs8Zw2Yyj3Nun34NXb5tVN1FWsYP6hY2sWy00zDjpBshu"
+                        stripeKey={STRIPE_KEY}
                     >
                         <button className='summary_button'>Book Now</button>
                     </StripeCheckout>

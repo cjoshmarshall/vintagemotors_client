@@ -1,14 +1,14 @@
 export const initialState={
-    tariff:[]
+    bookings:[]
 }
 
-const reducerTariff=(state=initialState,action)=>{
+const reducerBooking=(state=initialState,action)=>{
 
     switch ((action.type)) {
-        case 'GET_ALL_BIKES':
+        case 'GET_ALL_BOOKINGS':
             return {
                 ...state,
-                tariff:action.payload
+                bookings:action.payload
             }
     
         default:
@@ -16,4 +16,4 @@ const reducerTariff=(state=initialState,action)=>{
     }
 }
 
-export default reducerTariff;
+export default reducerBooking;
