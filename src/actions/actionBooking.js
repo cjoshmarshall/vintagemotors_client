@@ -3,10 +3,11 @@ import axios from 'axios';
 export const bookBike=(reqObj)=>async dispatch=>{
     console.log(reqObj)
     try{
-        const response=await axios.post('http://localhost:3006/api/orders/bookbike',reqObj)
-        // await axios.post('https://vintagemotorsrentals.herokuapp.com/api/bookings/bookbike',reqObj)
+        await axios.post('https://vintagemotorsrentals.herokuapp.com/api/orders/bookbike',reqObj)
         alert('Your bike booked Successfully')
-        console.log(response)
+        setTimeout(() => {
+          window.location.href='/orders'
+        }, 500);
     }
     catch(error){
         console.log(error)

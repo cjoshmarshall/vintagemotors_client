@@ -4,7 +4,6 @@ import './Header.css'
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { Menu, Dropdown } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
 
 
 function Header() {

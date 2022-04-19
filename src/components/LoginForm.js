@@ -5,23 +5,19 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 import './LoginForm.css'
-import { useHistory, useParams } from 'react-router-dom';
 
 function LoginForm() {
     const [phone,setPhone]=useState('');
     const [password, setPassword]=useState('')
 
     const dispatch=useDispatch()
-    const history=useHistory()
-    const params=useParams()
-
-    console.log(history)
-    console.log(params)
 
     function login(e){
         e.preventDefault()
         dispatch(userLogin({phone,password}))
-        history.push("/");
+        setTimeout(() => {
+          window.location.href='/'
+        }, 1000);
     }
 
 

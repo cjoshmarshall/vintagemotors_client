@@ -20,13 +20,13 @@ function Orders() {
   return (
     <div className='orders'>
         <h1 className='orders_title'>My Bookings</h1>
-      {bookings?
+      {/* {bookings?
         <>
           <h2 className='orders_title'>No Orders Yet</h2>
           <div className='orders_buttonContainer'>
             <Link to="/tariff"><button className='orders_button'>Book Now</button></Link>
           </div>
-        </>:
+        </>: */}
         <div className='orders_container'>
           {bookings.map(booking => (
             <div className='orders_subcontainer' >
@@ -45,7 +45,7 @@ function Orders() {
             </div>
           ))}
         </div>
-        }
+        {/* } */}
     </div>
   )
 }

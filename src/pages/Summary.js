@@ -248,7 +248,6 @@ function Summary({match}) {
             }
         }
         dispatch(bookBike(reqObj))
-        console.log(token)
     }
 
     

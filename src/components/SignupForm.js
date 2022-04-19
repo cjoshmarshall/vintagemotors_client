@@ -14,14 +14,15 @@ function SignupForm() {
 
     
     const dispatch=useDispatch()
-    const history=useHistory()
 
     function signup(e){
         e.preventDefault()
         dispatch(userSignup({
             name,phone,password,password2
         }))
-        history.push("/");
+        setTimeout(() => {
+          window.location.href='/'
+        }, 1000);
     }
 
     
