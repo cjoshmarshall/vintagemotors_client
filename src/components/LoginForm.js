@@ -15,9 +15,6 @@ function LoginForm() {
     function login(e){
         e.preventDefault()
         dispatch(userLogin({phone,password}))
-        setTimeout(() => {
-          window.location.href='/'
-        }, 1000);
     }
 
 

@@ -20,9 +20,6 @@ function SignupForm() {
         dispatch(userSignup({
             name,phone,password,password2
         }))
-        setTimeout(() => {
-          window.location.href='/'
-        }, 1000);
     }
 
     
