@@ -9,7 +9,6 @@ import { Menu, Dropdown } from 'antd';
 function Header() {
      
      const user=JSON.parse(localStorage.getItem("user"))
-     console.log(user)
 
      const logout=()=>{
           localStorage.clear()
