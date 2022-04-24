@@ -17,7 +17,7 @@ export const bookBike=(reqObj)=>async dispatch=>{
 export const getAllBookings=()=>async dispatch=>{
 
     try{
-        const response=await axios.get('https://vintagemotorsrentals.herokuapp.com/api/tariff')
+        const response=await axios.get('https://vintagemotorsrentals.herokuapp.com/api/orders/getallbookings')
         dispatch({type:'GET_ALL_BOOKINGS',payload:response.data})
     }
     catch(error){
