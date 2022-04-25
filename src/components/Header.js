@@ -18,14 +18,14 @@ function Header() {
      const menu = (
        <Menu>
          <Menu.Item className='header_menu' key="0">
-               <Link to="">Account</Link>
+               Account
          </Menu.Item>
          <Menu.Divider />
          <Menu.Item className='header_menu' key="1">
                <Link to="/orders">Orders</Link>
          </Menu.Item>
          <Menu.Divider />
-         <Menu.Item className='header_menu' key="3" onClick={logout}>
+         <Menu.Item className='header_menu' key="2" onClick={logout}>
               Logout
           </Menu.Item>
        </Menu>

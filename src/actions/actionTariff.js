@@ -1,9 +1,9 @@
-import axios from 'axios';
+import { publicRequest } from '../api/apiHandle';
 
 export const getAllBikes=()=>async dispatch=>{
 
     try{
-        const response=await axios.get('https://vintagemotorsrentals.herokuapp.com/api/tariff')
+        const response=await publicRequest.get('/tariff')
         dispatch({type:'GET_ALL_BIKES',payload:response.data})
     }
     catch(error){

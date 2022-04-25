@@ -3,7 +3,6 @@ import './Orders.css'
 import { useDispatch, useSelector} from 'react-redux'
 import { getAllBookings } from '../actions/actionBooking'
 import moment from 'moment'
-import {Link} from 'react-router-dom'
 
 
 function Orders() {
@@ -13,7 +12,7 @@ function Orders() {
 
   useEffect(()=>{
     dispatch(getAllBookings())
-  })
+  },[getAllBookings])
 
 
 
@@ -29,7 +28,7 @@ function Orders() {
         </>: */}
         <div className='orders_container'>
           {bookings.map(booking => (
-            <div className='orders_subcontainer' >
+            <div className='orders_subcontainer' key={booking._id}>
               <img className='orders_image' name='orders_image' src={booking.bike.image} alt='' />
               <div className='orders_innercontainer'>
                 <h3 className='orders_name'>{booking.bike.name} {booking.bike.model}</h3>
@@ -43,7 +42,7 @@ function Orders() {
                 <p className='orders_info2'><span>Created at</span><span>:</span><b>{moment(booking.createdAt).format("MMM DD yyyy")}</b></p>
               </div>
             </div>
-          ))}
+          )).reverse()}
         </div>
         {/* } */}
     </div>

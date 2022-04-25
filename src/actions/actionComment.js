@@ -1,10 +1,10 @@
-import axios from 'axios';
+import { publicRequest } from '../api/apiHandle';
 
 
 export const comments=(reqObj)=>async dispatch=>{
     console.log('hello')
     try{
-        const response=await axios.post('https://vintagemotorsrentals.herokuapp.com/api/comments', reqObj)
+        const response=await publicRequest.post('/comments', reqObj)
         setTimeout(() => {
           window.location.reload()
         }, 500);

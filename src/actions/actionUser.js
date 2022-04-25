@@ -1,11 +1,11 @@
-import axios from 'axios';
+import { publicRequest, userRequest } from '../api/apiHandle';
 
 
 export const userLogin=(reqObj)=>async dispatch=>{
 
     try{
-        const response=await axios.post('https://vintagemotorsrentals.herokuapp.com/api/users/login', reqObj)
-        localStorage.setItem('user', JSON.stringify(response.data))
+        const res=await userRequest.post('/auth/login', reqObj)
+        localStorage.setItem('user', JSON.stringify(res.data))
         window.location.replace("/")
     }
     catch(error){
@@ -17,9 +17,9 @@ export const userLogin=(reqObj)=>async dispatch=>{
 export const userSignup=(reqObj)=>async dispatch=>{
 
     try{
-        const response=await axios.post('https://vintagemotorsrentals.herokuapp.com/api/users/signup', reqObj)
+        const res=await publicRequest.post('/auth/signup', reqObj)
         alert('Registration Successful')
-        window.location.replace("/")
+        window.location.replace("/login")
     }
     catch(error){
         console.log(error)        
