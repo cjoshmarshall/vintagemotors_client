@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import Masthead from '../components/Masthead';
+import Masthead from '../components/Footer';
 import {getAllBikes} from '../actions/actionTariff'
 import './Tariff.css'
 import { Link } from 'react-router-dom';

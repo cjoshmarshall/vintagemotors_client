@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Masthead from '../components/Masthead';
+import Footer from '../components/Footer';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -90,7 +90,7 @@ function ContactUs() {
                 </div>
             </div>    
         </div>
-        <Masthead />
+        <Footer />
         </>
     )
 }

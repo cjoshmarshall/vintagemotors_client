@@ -4,7 +4,6 @@ import { userSignup} from "../actions/actionUser";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import './SignupForm.css'
-import { useHistory } from "react-router-dom";
 
 function SignupForm() {
     const [name, setName]=useState('');

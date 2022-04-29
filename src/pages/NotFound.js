@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import notFound_image from '../assets/notFound_image.png'
-import Masthead from '../components/Masthead.js'
+import Footer from '../components/Footer.js'
 import './notFound.css'
 
 function NotFound() {
@@ -14,7 +14,7 @@ function NotFound() {
             <div className='notFound_container'>
                 <img className='notFound_image' src={notFound_image} alt=''/>
             </div> 
-            <Masthead />       
+            <Footer />       
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './Orders.css'
-import { useDispatch, useSelector} from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { getAllBookings } from '../actions/actionBooking'
 import moment from 'moment'
 
@@ -14,18 +15,16 @@ function Orders() {
     dispatch(getAllBookings())
   },[getAllBookings])
 
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
   return (
     <div className='orders'>
         <h1 className='orders_title'>My Bookings</h1>
-      {/* {bookings?
-        <>
-          <h2 className='orders_title'>No Orders Yet</h2>
-          <div className='orders_buttonContainer'>
-            <Link to="/tariff"><button className='orders_button'>Book Now</button></Link>
-          </div>
-        </>: */}
+      {bookings?
         <div className='orders_container'>
           {bookings.map(booking => (
             <div className='orders_subcontainer' key={booking._id}>
@@ -44,7 +43,13 @@ function Orders() {
             </div>
           )).reverse()}
         </div>
-        {/* } */}
+        :<>
+          <h2 className='orders_title'>No Orders Yet</h2>
+          <div className='orders_buttonContainer'>
+            <Link to="/tariff"><button className='orders_button'>Book Now</button></Link>
+          </div>
+        </>
+        }
     </div>
   )
 }

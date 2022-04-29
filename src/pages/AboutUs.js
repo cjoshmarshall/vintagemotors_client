@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Masthead from '../components/Masthead';
+import Footer from '../components/Footer';
 import './AboutUs.css'
 
 function AboutUs() {
@@ -29,7 +29,7 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
-            <Masthead />
+            <Footer />
         </>
     )
 }

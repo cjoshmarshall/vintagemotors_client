@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import LoginForm from '../components/LoginForm';
 import SignupForm from '../components/SignupForm';
-import Masthead from '../components/Masthead.js'
+import Footer from '../components/Footer.js'
 import './LoginPage.css'
 
 
@@ -40,7 +40,7 @@ function LoginPage() {
                 </div>
             </div>            
         </div>
-        <Masthead />
+        <Footer />
         </>
   )
 }

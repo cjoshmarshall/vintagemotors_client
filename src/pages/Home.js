@@ -3,7 +3,7 @@ import './Home.css';
 import home_icon1 from '../assets/home_icon1.png'
 import home_icon2 from '../assets/home_icon2.png'
 import home_image2 from '../assets/home_image2.jpg'
-import Masthead from '../components/Masthead';
+import Footer from '../components/Footer';
 import { Link } from 'react-router-dom'
 
 
@@ -69,7 +69,7 @@ function Home() {
                         <div className='home_body'>We are obssessed on giving you the best possible experience. This is not only with well served bikes but also with the 24/7 support team available just a call away.</div>
                     </div>
                 </div>
-            <Masthead />
+            <Footer />
         </div>
     )
 }

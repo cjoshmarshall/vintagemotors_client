@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Masthead from '../components/Masthead'
+import Masthead from '../components/Footer'
 import './TermsCond.css'
 
 function TermsCond() {

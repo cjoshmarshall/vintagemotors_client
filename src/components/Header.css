@@ -80,59 +80,12 @@
 .dropdown:hover .dropdown_content {display: block;}
 .dropdown:hover .header_dropbtn {background-color: rgb(218, 199, 34);}
 
-/* 
-.header_button1 {
-  width: 68px;
-  height: 20px;
-  padding: 15px;
-}
-
-.header_button2 {
-  width: 40px;
-  height: 20px;
-  padding: 15px;
-}
-
-.header_button3 {
-  width: 120px;
-  height: 20px;
-  padding: 15px;
-}
-
-.header_button4 {
-  width: 80px;
-  height: 20px;
-  padding: 15px;
-} */
-
 .header_right {
   display: flex;
   object-fit: contain;
   align-items: center;
   cursor: pointer;
 }
-/* 
-.header_location {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  width: 125px;
-  margin-right: 10%;
-}
-.header_locationIcon {
-  color: rgb(219, 199, 16);
-}
-.header_locationOption {
-  padding: 10px;
-  border: 1.5px solid rgb(219, 199, 16);
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1;
-}
-.header_locationLocation:focus,
-.header_locationLocation:hover {
-  outline: none;
-} */
 
 .header_login {
   width: 75px;

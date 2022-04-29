@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Masthead from '../components/Masthead'
+import Footer from '../components/Footer'
 import './OwnAFranchise.css'
 
 function OwnAFranchise() {
@@ -58,7 +58,7 @@ function OwnAFranchise() {
                 </div>
             </div>            
         </div>
-        <Masthead />
+        <Footer />
         </>
     )
 }
