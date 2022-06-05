@@ -2,7 +2,7 @@ import { publicRequest } from '../api/apiHandle';
 
 
 export const comments=(reqObj)=>async dispatch=>{
-    console.log('hello')
+    
     try{
         const response=await publicRequest.post('/comments', reqObj)
         setTimeout(() => {

@@ -1,7 +1,7 @@
 import { publicRequest } from '../api/apiHandle';
 
 export const bookBike=(reqObj)=>async dispatch=>{
-    console.log(reqObj)
+    
     try{
         const response=await publicRequest.post('/orders/bookbike',reqObj)
         alert('Your bike booked Successfully')
