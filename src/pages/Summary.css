@@ -45,6 +45,9 @@
     grid-column-start: 1;
     grid-column-end: 2;
 }
+.summary_image{
+    width: 250px;
+}
 .summary_innertitle{
     margin: 0;
     text-align: center;
