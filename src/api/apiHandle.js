@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const BASE_URL="http://localhost:3006/api"
-const BASE_URL="https://vintagemotorsrentals.herokuapp.com/api"
+const BASE_URL="https://5ru3tukclf.execute-api.ap-south-1.amazonaws.com/dev/api"
 const TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjUxZDkyZGYwY2VlZjgwNDlkMzBlNyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1MDgwNDk0MCwiZXhwIjoxNjUxMDY0MTQwfQ.md91PjkU9YmOHodPCBzlCZ6nlgoimM8X3GgsAQzuYAs"
 
 export const publicRequest=axios.create({
